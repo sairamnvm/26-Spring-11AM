@@ -632,5 +632,112 @@ Calendar.newInstance() ; //
 
 
 
+GIT Repository URL : 
+
+https://github.com/Ashok-IT-School/26-Spring-11AM
+
+
+
+
+
+
+class Demo{
+  public static void display(ArrayList al){
+	//logic
+	sysout(al);
+  }
+ 
+}
+---------------------------------------------------------------
+class Test{
+	psvm(String... ar){
+		LinkedList ll = new LinkedList();
+		ll.add(10); ll.add(20); ll.add(30);
+		Demo.display(ll);
+
+		ArrayList al = new ArrayList();
+		al.add(30), al.add(40); al.add(50);
+		Demo.display(al);
+	}
+}
+------------------------------------------------------------
+
+
+
+class Demo{	
+	public List getData(){
+		//logic
+		ArrayList al = new ArrayList();
+		al.add(20);
+		return al;
+	}
+}
+------------------------------------------------------
+List list = getData();
+
+
+
+
+
+The process of injecting dependent object into target object is called Dependency Injection (DI).
+
+We can achieve dependency injection in 2 ways.
+
+1) Setter Injection (SI)
+
+2) Constructor Injection (CI)
+
+Setter Injection : Injecting dependent object into target object by calling target class setter method.
+
+		Car c = new Car();
+		c.setEng(eng);
+
+Constructor Injection : Injecting Dependent Object into target object by calling target class constructor.
+
+		Car c = new Car(eng);
+
+
+
+
+
+
+
+
+IOC : Inversion of control
+
+IOC is a principle which is used to manage and colloborate dependencies among objects in application.
+
+
+Q) can ioc manage and colloborate any two class objects ? 
+
+Ans) No - If your classes folollow some rules and guidelines then only ioc can manage and colloborate your objects.
+
+
+If we need to use IOC for Dependency Injection for our classes then our classes should follow Strategy Design Pattern.
+
+Strategy Design Pattern Rules
+-------------------------------
+1) Favour composition over inheritence
+
+2) Always code to interfaces instead of concrete implementations
+
+3) Code should be open for extension and should be closed for modification.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
